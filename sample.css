@@ -47,13 +47,15 @@ header {
 
 .logo01 {
     display: flex;
-    
+    position:relative;
+    top:10px;
     width: 180px;
 }
 .drawer-list{
+  width:718px;
   display:flex;
-  justify-content:space-between;
 }
+
 
 header ul li{
     display: flex;
@@ -728,18 +730,19 @@ label {
   right: 50px;
   transition: .3s;
   z-index: 100;
+  top:10px;
 }
 
 .span1 {
-  top: 20px;
+  top: 25px;
 }
 
 .span2 {
-  top: 30px;
+  top: 35px;
 }
 
 .span3 {
-  top: 40px;
+  top: 45px;
 }
 
 #check:checked ~ .span2 {
@@ -749,14 +752,14 @@ label {
 #check:checked ~ .span1 {
   width: 27px;
   transform: rotate(45deg);
-  top: 27px;
+  top: 32px;
   right: 47px;
 }
 
 #check:checked ~ .span3 {
   width: 27px;
   transform: rotate(-45deg);
-  top: 27px;
+  top: 32px;
   right: 47px;
 }
 
@@ -766,7 +769,7 @@ label {
 
 .drawer-list {
   max-width:959px;
-  
+  width:100%;
   background-color: rgba(0, 0, 0, 0.8);;
   margin:0;
   padding: 0;
@@ -835,6 +838,51 @@ label {
     padding:15px 0;
   }
   
+  .logo01{
+    top:0;
+  }
+  
+  .spans {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  position: fixed;
+  right: 50px;
+  transition: .3s;
+  z-index: 100;
+  top:0;
+}
+
+.span1 {
+  top: 15px;
+}
+
+.span2 {
+  top: 25px;
+}
+
+.span3 {
+  top: 35px;
+}
+
+#check:checked ~ .span2 {
+  display: none;
+}
+
+#check:checked ~ .span1 {
+  width: 27px;
+  transform: rotate(45deg);
+  top: 22px;
+  right: 47px;
+}
+
+#check:checked ~ .span3 {
+  width: 27px;
+  transform: rotate(-45deg);
+  top: 22px;
+  right: 47px;
+}
+
   .course-top{
     background-image:url(images/course-hero-sp.png);
     background-size:contain;
